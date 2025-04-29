@@ -22,3 +22,19 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+The pull request you referenced updates the `@actions/core` dependency from version `1.9.0` to `1.9.1`. Here's a breakdown of the changes:
+
+### Files Changed:
+1. **`package.json`**
+   - The dependency `@actions/core` is updated from `1.9.0` to `1.9.1`.
+
+2. **`yarn.lock`**
+   - Reflects the change in the `@actions/core` version, updating its resolved URL and integrity hash.
+
+3. **`dist/index.js`**
+   - Modifies the delimiter used for environment variable management.
+   - Introduces a UUID-based delimiter (`ghadelimiter_${uuid_1.v4()}`) to enhance safety and prevent exploitation.
+
+---
+
+If you need further details or assistance with this pull request, let me know!
